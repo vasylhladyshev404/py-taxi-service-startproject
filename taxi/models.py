@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
-from django.config import settings
+from django.conf import settings
 
 
 class Manufacturer(models.Model):
