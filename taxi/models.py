@@ -8,14 +8,14 @@ class Manufacturer(models.Model):
     country = models.CharField(max_length=50)
 
     def __str__(self) -> str:
-        return {self.name}
+        return self.name
 
 
 class Driver(AbstractUser):
     license_number = models.CharField(max_length=50, unique=True)
 
     def __str__(self) -> str:
-        return {self.username}
+        return self.username
 
 
 class Car(models.Model):
@@ -31,4 +31,4 @@ class Car(models.Model):
     )
 
     def __str__(self) -> str:
-            return {self.model}
+            return self.model
